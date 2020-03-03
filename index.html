@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/simple-grid.min.css">
+    <title>Neumorphic Calculatrice</title>
+</head>
+<body>
+    <header>
+        <h1>
+            Neumorphic Calculator
+        </h1>
+    </header>
+    <main>
+        <div class="container calc">
+            <div class="row">
+                <div class="col-3"></div>
+                <div class="col-6 result">
+                    <p id="resultp"></p>
+                </div>
+                <div class="col-3"></div>
+            </div>
+            <div class="row">
+
+            </div>
+        </div>
+        <div class="container calcButtons">
+            <div class="row">
+                <div class="row color">
+                    <div class="col-3"></div>
+                    <div class="col-1 calcButton ope">C</div>
+                    <div class="col-1 calcButton ope">+/-</div>
+                    <div class="col-1 calcButton ope">%</div>
+                    <div class="col-1 calcButton ope">÷</div>
+                    <div class="col-3"></div>
+                </div>
+                <div class="row color">
+                    <div class="col-3"></div>
+                    <div class="col-1 calcButton number">7</div>
+                    <div class="col-1 calcButton number">8</div>
+                    <div class="col-1 calcButton number">9</div>
+                    <div class="col-1 calcButton ope">x</div>
+                    <div class="col-3"></div>
+                </div>
+                <div class="row color">
+                    <div class="col-3"></div>
+                    <div class="col-1 calcButton number">4</div>
+                    <div class="col-1 calcButton number">5</div>
+                    <div class="col-1 calcButton number">6</div>
+                    <div class="col-1 calcButton ope">-</div>
+                    <div class="col-3"></div>
+                </div>
+                <div class="row color">
+                    <div class="col-3"></div>
+                    <div class="col-1 calcButton number">1</div>
+                    <div class="col-1 calcButton number">2</div>
+                    <div class="col-1 calcButton number">3</div>
+                    <div class="col-1 calcButton ope">+</div>
+                    <div class="col-3"></div>
+                </div>
+                <div class="row color">
+                    <div class="col-3"></div>
+                    <div class="col-1 calcButton number">0</div>
+                    <div class="col-1 calcButton">,</div>
+                    <div onclick="calcString()" class="col-2 equal calcButton">=</div>
+                    <div class="col-3"></div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-3"></div>
+                <div class="col-6 slider">
+                    <input type="range" min="0" max="100" value="1" id="sliderContainer">
+                </div>
+                <div class="col-3">
+                    <p>Value: <span id="sliderValue"></span> </p>
+                </div>
+            </div>
+        </div>
+        <script src="scripts/script.js"></script>
+    </main>
+</body>
+</html>
